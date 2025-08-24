@@ -5,9 +5,10 @@ Syftet med detta projekt är att bygga en dynamisk webbplats med JavaScript, HTM
 
 Projektet demonstrerar förståelse för DOM-noder, eventhantering, fetch/Axios, persistens med LocalStorage och data­visualisering.
 
-https://github.com/gozzde09/Countries-Vanilla-JS/blob/main/video.mp4
+[video.zip](https://github.com/user-attachments/files/21957522/video.zip)
 
 🔗 Använda API:er
+
 
 Två API:er används för att hämta data:
 
