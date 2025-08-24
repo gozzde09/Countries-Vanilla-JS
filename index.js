@@ -82,28 +82,26 @@ async function f() {
     const searchInput = document.querySelector(".search-input");
     const error = document.querySelector(".p404");
     const cards = document.querySelectorAll(".country-card");
+    const resultsContainer = document.querySelector(".search-results");
 
-    // Töm sökfältet
     searchInput.value = "";
 
-    // Lyssna på input
     searchInput.addEventListener("input", () => {
       const value = searchInput.value.toLowerCase();
-      let found = false; // Flagga om vi hittar något
+      resultsContainer.innerHTML = ""; // töm tidigare resultat
+      let found = false;
 
       cards.forEach((card) => {
         const countryName = card
           .querySelector(".card-title")
           .textContent.toLowerCase();
         if (countryName.includes(value)) {
-          card.style.display = "block";
+          const clone = card.cloneNode(true); // kopiera kortet
+          resultsContainer.appendChild(clone);
           found = true;
-        } else {
-          card.style.display = "none";
         }
       });
 
-      // Visa eller dölj felmeddelande
       if (found) {
         error.style.display = "none";
         error.textContent = "";
@@ -111,10 +109,6 @@ async function f() {
         error.style.display = "block";
         error.textContent = "Inget land hittades. Försök igen!";
       }
-    });
-
-    searchInput.addEventListener("click", () => {
-      searchInput.select();
     });
   }
 
@@ -132,7 +126,7 @@ async function f() {
       const link = card.querySelector(".card-title");
       const cardTitel = link.textContent;
 
-      //Om title finns i local storgage, stjärna blir guld i början
+      //Om title finns i local storage, stjärna blir guld i början
       for (let i = 0; i < favorites.length; i++) {
         if (cardTitel === favorites[i].name) {
           starButton.style.color = "#ffc107";
@@ -157,12 +151,12 @@ async function f() {
       starButton.style.color = "#ffc107"; //Guld
       favorites.push({ name: cardTitel, status: "favourite" }); //Tillägga till array
       localStorage.setItem("favorites", JSON.stringify(favorites)); //Tillägga till storage
-      //  alert("ADDED TO FAVORIT " + cardTitel); //!KONTROL
+      //  alert("ADDED TO FAVORIT " + cardTitel);
     } else {
       starButton.style.color = "black";
       favorites = favorites.filter((item) => item.name !== cardTitel); //Ta bort från array
       localStorage.setItem("favorites", JSON.stringify(favorites)); //Ta bort från storage
-      //   alert("DELETED FRÅN FAVORIT " + cardTitel); //!KONTROL
+      //   alert("DELETED FRÅN FAVORIT " + cardTitel);
     }
   }
 }
