@@ -7,12 +7,13 @@ Projektet demonstrerar förståelse för DOM-noder, eventhantering, fetch/Axios,
 
 LIVE :https://countries-vanilla-js.onrender.com/ 
 
-[video.zip](https://github.com/user-attachments/files/21957522/video.zip)
+https://github.com/user-attachments/assets/37bf4d98-43b0-4557-b8bc-2ed403ffe1b1
 
 🔗 Använda API:er
 
+<img width="843" height="621" alt="struktur" src="https://github.com/user-attachments/assets/0f7090e9-c1fa-4ca2-a931-720f909ae217" />
 
-Två API:er används för att hämta data:
+TRE API:er används för att hämta data:
 
 REST Countries API
 
