@@ -8,6 +8,14 @@ Projektet demonstrerar förståelse för DOM-noder, eventhantering, fetch/Axios,
 <video src="video.mp4" width="640" controls>
   Not supported.
 </video>
+video test
+<video src="video.mp4"
+       controls
+       playsinline
+       style="max-width:100%; height:auto;"
+       poster="poster.jpg">
+  Tarayıcınız bu videoyu desteklemiyor.
+</video>
 
 🔗 Använda API:er
 
