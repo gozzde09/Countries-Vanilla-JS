@@ -32,8 +32,6 @@ async function f() {
       images.results.forEach((image) => {
         slidesLinks.push(image.urls.regular); // Push regular images till array:en
       });
-      //? RandomBild funkar inte pga limit på Unsplash. VÄLJER FÖRSTA BILD
-      // // let randomIndex = Math.floor(Math.random() * slidesLinks.length);
 
       // SKAPA KORT med Bootstrap struktur
       cardDiv.innerHTML = `
@@ -96,8 +94,20 @@ async function f() {
           .querySelector(".card-title")
           .textContent.toLowerCase();
         if (countryName.includes(value)) {
-          const clone = card.cloneNode(true); // kopiera kortet
-          resultsContainer.appendChild(card);
+          const clone = card.cloneNode(true);
+
+          const clonedCountryName =
+            clone.querySelector(".card-title").textContent;
+          const clonedStarButton = clone.querySelector(".star-button");
+          let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+          if (favorites.some((item) => item.name === clonedCountryName)) {
+            clonedStarButton.style.color = "#ffc107"; // Guld för favorit
+          } else {
+            clonedStarButton.style.color = "#343a40"; // Svart för vanlig
+          }
+
+          resultsContainer.appendChild(clone);
           found = true;
         }
       });
