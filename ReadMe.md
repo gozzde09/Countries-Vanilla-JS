@@ -1,4 +1,5 @@
 Dynamisk webbplats med API:er - Vanilla Javascript & Bootstrap
+
 📌 Projektbeskrivning
 
 Syftet med detta projekt är att bygga en dynamisk webbplats med JavaScript, HTML, CSS och Bootstrap, där information hämtas från externa webbtjänster (API:er) och presenteras för användaren.
@@ -32,8 +33,9 @@ Cities API
 ⚙️ Funktionalitet
 
 Eventhantering:
-Sökfält för att filtrera länder.
-Karusel för att visa bilder
+
+- Sökfält för att filtrera länder.
+- Karusel för att visa bilder
 
 CRUD-funktionalitet:
 För Sverige kan användaren lägga till, redigera och ta bort städer (Cities-API). Hanteras via HTML-formulär.
