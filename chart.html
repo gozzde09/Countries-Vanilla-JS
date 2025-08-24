@@ -1,97 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gözde Akgün" />
+    <meta name="description" content="Resa och lära i Europa" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="travel.svg" />
+    <title>CHARTS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS-->
+  </head>
 
-<head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <meta name="author" content="Gözde Akgün" >
-  <meta name="description" content="Resa och lära i Europa" >
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="stylesheet" href="index.css" >
-  <link rel="icon" href="travel.svg" >
-  <title>CHARTS</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
-  <!-- Bootstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" >
-  <!-- Bootstrap icons-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Bootstrap JS-->
-</head>
+  <body class="global d-flex flex-column">
+    <!-- HEADER - NAV -->
+    <header class="p-3 bg-dark text-white">
+      <div class="p-2 container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a
+            href="index.html"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img
+              id="logo"
+              src="travel.svg"
+              alt="logo"
+              style="width: 100px; height: 60px; margin-bottom: 5px" />
+          </a>
 
-<body class="global d-flex flex-column">
-  <!-- HEADER - NAV -->
-  <header class="p-3 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <img id="logo" src="travel.svg" alt="logo" style="width: 100px; height: auto" >
-        </a>
-
-        <h2 class="nav mx-4">
-          <a href="index.html"
-            class="nav-link px-2 text-white link-underline-opacity-25 link-underline-opacity-100-hover">
-            RESA & LÄRA</a>
-        </h2>
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mx-auto">
-          <li>
-            <a href="index.html"
+          <h2 class="nav mx-4">
+            <a
+              href="index.html"
               class="nav-link px-2 text-white link-underline-opacity-25 link-underline-opacity-100-hover">
-              Hemsida</a>
-          </li>
-          <li>
-            <a href="chart.html"
-              class="nav-link px-2 text-warning link-underline-opacity-25 link-underline-opacity-100-hover">Grafik</a>
-          </li>
-        </ul>
-        <div class="text-end login">
-          <a href="login.html" class="btn btn-warning"> Logga in </a>
+              RESA & LÄRA</a
+            >
+          </h2>
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mx-auto">
+            <li>
+              <a
+                href="index.html"
+                class="nav-link px-2 text-white link-underline-opacity-25 link-underline-opacity-100-hover">
+                Hem</a
+              >
+            </li>
+            <li>
+              <a
+                href="chart.html"
+                class="nav-link px-2 text-warning link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Grafik</a
+              >
+            </li>
+            <li>
+              <a
+                href="cities.html"
+                class="nav-link px-2 text-white link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Städer</a
+              >
+            </li>
+          </ul>
+          <div class="text-end login">
+            <a href="login.html" class="btn btn-warning"> Logga in </a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <!-- GRAFIKS -->
-  <main class="d-flex flex-wrap">
-    <div class="info d-flex flex-column card text-center mx-auto">
-      <div class="card-body mx-auto">
-        <h2 class="chartsRubrik my-4">
-          Yt- och befolkningsdiagram över största länderna i Europa
-        </h2>
-        <p class="card-text">
-          Få en visuell insikt i nordeuropeiska länder genom yt- och
-          befolkningsdiagram.
-        </p>
-        <p class="card-text">
-          Denna grafiska representation ger dig möjlighet att jämföra storlek
-          och befolkning, vilket kan vara användbart för geografiska och
-          demografiska analyser.
-        </p>
+    </header>
+    <!-- GRAFIKS -->
+    <main class="d-flex flex-wrap">
+      <div class="info d-flex flex-column card text-center mx-auto">
+        <div class="card-body mx-auto">
+          <h2 class="chartsRubrik my-4">
+            Yt- och befolkningsdiagram över största länderna i Europa
+          </h2>
+          <p class="card-text">
+            Få en visuell insikt i nordeuropeiska länder genom yt- och
+            befolkningsdiagram.
+          </p>
+          <p class="card-text">
+            Denna grafiska representation ger dig möjlighet att jämföra storlek
+            och befolkning, vilket kan vara användbart för geografiska och
+            demografiska analyser.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="mx-auto my-2">
-      <h2 class="chartsRubrik .text-dark-emphasis">YTA</h2>
-      <canvas id="areaChart" width="500" height="500"></canvas>
-    </div>
-    <div class="mx-auto my-2">
-      <h2 class="chartsRubrik .text-dark-emphasis">BEFOLKNING</h2>
-      <canvas id="popChart" width="500" height="500"></canvas>
-    </div>
-    <div class="mx-auto my-2">
-      <h2 class="chartsRubrik .text-dark-emphasis">YTA & BEFOLKNING</h2>
-      <canvas id="combinedChart" width="1000" height="500"></canvas>
-    </div>
-  </main>
+      <div class="mx-auto my-2">
+        <h2 class="chartsRubrik .text-dark-emphasis">YTA</h2>
+        <canvas id="areaChart" width="500" height="500"></canvas>
+      </div>
+      <div class="mx-auto my-2">
+        <h2 class="chartsRubrik .text-dark-emphasis">BEFOLKNING</h2>
+        <canvas id="popChart" width="500" height="500"></canvas>
+      </div>
+      <div class="mx-auto my-2">
+        <h2 class="chartsRubrik .text-dark-emphasis">YTA & BEFOLKNING</h2>
+        <canvas id="combinedChart" width="1000" height="500"></canvas>
+      </div>
+    </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark text-center text-white">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Resa & Lära</a>
-    </div>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center text-white">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Resa & Lära</a>
+      </div>
+    </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="chart.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+  </body>
 </html>
