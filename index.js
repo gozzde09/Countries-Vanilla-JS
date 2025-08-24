@@ -26,7 +26,7 @@ async function f() {
           },
         }
       );
-      console.log(response.data);
+      // console.log(response.data);
       let images = response.data; // Axios images data
       let slidesLinks = []; // Tom array för image länkar
       images.results.forEach((image) => {
@@ -97,7 +97,7 @@ async function f() {
           .textContent.toLowerCase();
         if (countryName.includes(value)) {
           const clone = card.cloneNode(true); // kopiera kortet
-          resultsContainer.appendChild(clone);
+          resultsContainer.appendChild(card);
           found = true;
         }
       });
@@ -127,14 +127,14 @@ async function f() {
       const cardTitel = link.textContent;
 
       //Om title finns i local storage, stjärna blir guld i början
-      for (let i = 0; i < favorites.length; i++) {
-        if (cardTitel === favorites[i].name) {
-          starButton.style.color = "#ffc107";
-        }
+      // for (let i = 0; i < favorites.length; i++) {
+      //   if (cardTitel === favorites[i].name) {
+      //     starButton.style.color = "#ffc107";
+      //   }
+      // }
+      if (favorites.some((item) => item.name === cardTitel)) {
+        starButton.style.color = "#ffc107";
       }
-      //  if (favorites.some((item) => item.name === cardTitel)) {
-      //    starButton.style.color = "#ffc107";
-      //  }
     });
   }
   function addFavorite() {
@@ -144,7 +144,7 @@ async function f() {
     const cardTitel = link.textContent; //INNEHÅLL--COUNTRYS NAME
     // console.log(cardTitel);
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-    console.log(favorites);
+    // console.log(favorites);
 
     if (!favorites.some((item) => item.name === cardTitel)) {
       // Landet finns ej i listan
@@ -159,4 +159,15 @@ async function f() {
       //   alert("DELETED FRÅN FAVORIT " + cardTitel);
     }
   }
+  document.getElementById("countryList").addEventListener("click", (e) => {
+    if (e.target.classList.contains("star-button")) {
+      addFavorite.call(e.target);
+    }
+  });
+
+  document.querySelector(".search-results").addEventListener("click", (e) => {
+    if (e.target.classList.contains("star-button")) {
+      addFavorite.call(e.target);
+    }
+  });
 }

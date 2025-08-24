@@ -75,13 +75,3 @@ index.js – Hämtning av API-data, DOM-hantering, events.
 charts.js – Visualisering med Chart.js.
 
 cities.js - CRUD-funktionalitet kopplad till Cities API
-
-🚀 Så här körs projektet
-
-Klona repot eller ladda ner projektfilerna.
-
-Starta en lokal server (t.ex. Live Server i VS Code).
-
-Navigera till index.html.
-
-Använd menyerna för att växla mellan olika sidor.
