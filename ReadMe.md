@@ -5,6 +5,8 @@ Syftet med detta projekt är att bygga en dynamisk webbplats med JavaScript, HTM
 
 Projektet demonstrerar förståelse för DOM-noder, eventhantering, fetch/Axios, persistens med LocalStorage och data­visualisering.
 
+LIVE :https://countries-vanilla-js.onrender.com/ 
+
 [video.zip](https://github.com/user-attachments/files/21957522/video.zip)
 
 🔗 Använda API:er
