@@ -1,0 +1,136 @@
+.global {
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/*
+==================================================================================
+HEADER
+==================================================================================
+*/
+header,
+h3 {
+  font-family: "Lucida Handwriting", "Lucida Sans", "Lucida", cursive;
+}
+.nav-link {
+  color: #ffffff;
+  transition: opacity 0.3s;
+}
+.nav-link:hover {
+  opacity: 1;
+  border-bottom: 2px solid #ffc107;
+}
+.login {
+  transition: background-color 0.3s ease;
+}
+.login a:hover {
+  background-color: #fcd35a;
+}
+/* KARUSEL */
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*
+==================================================================================
+MAIN
+==================================================================================
+*/
+main {
+  flex-grow: 1;
+  background-color: rgb(244, 237, 215);
+  color: #343a40;
+}
+.info {
+  width: 80%;
+  text-align: center;
+  font-size: larger;
+  margin: 30px auto;
+}
+
+/* CARDS */
+.card{
+  margin-bottom:2rem;
+    background-color: #f5f0ea;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+.card-container, .search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-container > li {
+  margin: 15px;
+  list-style: none;
+}
+
+.flag,
+.card-title {
+  display: inline-block;
+  margin: 5px 0;
+  vertical-align: sub;
+}
+
+/* STARS */
+.star-button {
+  font-family: "Font Awesome 5 Free";
+  content: "\f005";
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+/*
+==================================================================================
+             ===================== CHARTS =====================
+==================================================================================
+*/
+.chartsRubrik {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  margin:10px;
+}
+canvas {
+  margin: 20px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  background-color: rgb(241, 237, 237);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+/*
+==================================================================================
+             ===================== LOGIN & CITIES =====================
+==================================================================================
+*/
+.forms {
+background-color: rgb(241, 237, 237);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+margin:20px;
+
+}
+.login-form{
+  width:30%
+}
+
+label,
+input, .errors {
+  margin: 10px;
+}
+.form-control, .checkbox {
+  margin:15px auto;
+}
+
+.delete,
+.edit {
+  margin: 10px;
+}
+td {
+  vertical-align: middle;
+}
