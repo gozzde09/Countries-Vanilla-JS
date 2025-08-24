@@ -7,7 +7,7 @@ Projektet demonstrerar förståelse för DOM-noder, eventhantering, fetch/Axios,
 
 LIVE :https://countries-vanilla-js.onrender.com/ 
 
-https://github.com/user-attachments/assets/37bf4d98-43b0-4557-b8bc-2ed403ffe1b1
+https://github.com/user-attachments/assets/167eba03-233f-432f-b065-abbf57097505
 
 🔗 Använda API:er
 
